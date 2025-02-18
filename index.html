@@ -8,73 +8,84 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="media/image2.png" alt="Logo Valle Grande" class="logo">
+        <div class="header-top">
+            <img src="imagenes/Imagen2.png" alt="Logo Valle Grande" class="logo">
             <h1>Bienvenidos a Valle Grande</h1>
         </div>
-        <img src="media/image4.jpg" alt="Banner Valle Grande" class="banner">
+        <nav class="header-nav">
+            <a href="#nosotros" class="nav-box">Nosotros</a>
+            <a href="#historia" class="nav-box">Historia</a>
+            <a href="#video" class="nav-box">Video</a>
+        </nav>
+        <img src="imagenes/Imagen1.jpg" alt="Banner Valle Grande" class="banner">
     </header>
 
-    <!-- Sección de rectángulos con enlaces internos -->
-    <section class="navigation-boxes">
-        <a href="#nosotros" class="box">
-            <div class="box-content">
-                <h2>Nosotros</h2>
+    <main>
+        <!-- Sección Quiénes Somos -->
+        <section id="nosotros" class="about-us">
+            <h2>Quiénes somos</h2>
+            <div class="content-wrapper">
+                <p>Valle Grande es actualmente un Centro de Educación Superior constituido por la Promotora de Obras Sociales y de Instrucción Popular (PROSIP) el 25 de febrero de 1985, reconocido por el Ministerio de Agricultura mediante Resolución Directoral N° 04353-AG-DGAG del 2 de junio de 1983 y por el Ministerio de Educación mediante Resolución Ministerial N°0731-92-ED.</p>
+                
             </div>
-        </a>
-        <a href="#historia" class="box">
-            <div class="box-content">
-                <h2>Historia</h2>
+        </section>
+
+        <!-- Sección Desarrollo Histórico -->
+        <section id="historia" class="history">
+            <h2>Desarrollo histórico</h2>
+            <div class="content-history">
+                <p>Han transcurrido casi 50 años de trabajo y continuamos con el mismo deseo, seguir contribuyendo con el bienestar de las familias de Cañete y Yauyos.</p>
             </div>
-        </a>
-        <a href="#video" class="box">
-            <div class="box-content">
-                <h2>Video</h2>
+            <img src="imagenes/Imagen3.jpg" alt="Imagen histórica de Valle Grande" class="history-image">
+            <a href="https://vallegrande.edu.pe/nosotros/" class="read-more">LEER MÁS</a>
+        </section>
+
+         <!-- Sección Misión y Visión -->
+         <section class="mission-vision">
+            <div class="MisiónyVision">
+                <h2>Misión y Visión</h2>
             </div>
-        </a>
-    </section>
+            <div class="mission">
+                <h3>Misión</h3>
+                <p>Formar personas en el ámbito técnico profesional, considerando el sentido trascendente del hombre, desarrollando en ellos competencias que faciliten su inserción laboral, contribuyendo de esta manera al desarrollo del país.</p>
+            </div>
+            
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Ser una institución referente de excelencia de la educación técnico profesional del Perú, asociada al sector productivo.</p>
+            </div>
+        </section>
 
-    <!-- Sección "Nosotros" con ancla -->
-    <section id="nosotros" class="about-us">
-        <h2>Quiénes somos</h2>
-        <p>Valle Grande es actualmente un Centro de Educación Superior constituido por la Promotora de Obras Sociales y de Instrucción Popular (PROSIP) el 25 de febrero de 1965, reconocido por el Ministerio de Agricultura mediante Resolución Directoral N° 04383-AG-DGAG del 2 de junio de 1983 y por el Ministerio de Educación mediante Resolución Ministerial N°0751-92-ED.</p>
-        <img src="media/image1.jpg" alt="Imagen histórica de Valle Grande" class="about-image">
-    </section>
+        <!-- Organigrama -->
+        <section class="organigrama">
+            <h3>Organigrama Valle Grande</h3>
+        </section>
 
-    <!-- Sección "Historia" con ancla -->
-    <section id="historia" class="history">
-        <h2>Desarrollo histórico</h2>
-        <p>Han transcurrido casi 50 años de trabajo y continuamos con el mismo deseo, seguir contribuyendo con el bienestar de las familias de Cañete y Yauyos.</p>
-        <a href="https://vallegrande.edu.pe/nosotros/" class="read-more">LEER MÁS</a>
-    </section>
-    
-    <!-- Agregar después de la sección de historia -->
-    <section class="mission-vision">
-        <div class="mission">
-            <h3>Misión</h3>
-            <p>Formar personas en el ámbito técnico profesional, considerando el sentido trascendente del hombre, desarrollando en ellos competencias que faciliten su inserción laboral, contribuyendo de esta manera al desarrollo del país.</p>
-        </div>
-        
-        <div class="vision">
-            <h3>Visión</h3>
-            <p>Ser una institución referente de excelencia de la educación técnico profesional del Perú, asociada al sector productivo.</p>
-        </div>
-
-        <a href="https://www.vallegrande.edu.pe/images/organigrama2.jpg" class="organigrama-link">
-            <img src="media/image_organigrama.jpg" alt="Organigrama Valle Grande">
-        </a>
-    </section>
-
-    <!-- Sección "Video" con ancla -->
-    <section id="video" class="youtube-channel">
-        <h2>Visita nuestro canal de Youtube</h2>
-        <div class="youtube-embed">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+        <!-- Sección YouTube -->
+        <section id="video" class="youtube-channel">
+            <h2>Visita nuestro canal de Youtube</h2>
+            <div class="youtube-embed">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
 
     <footer>
+        
+        <div class="footer-contact">
+                <div class="contact-column">
+                    <h3>Contacto</h3>
+                    <p>RUC: 20120099095</p>
+                    <p>Razón Social: I.E.S.T.P. Valle Grande</p>
+                    <p>Ant. Panamericana Sur: Km. 144,</p>
+                    <p>San Vicente de Cañete, Lima, Perú.Apartado Postal 70.</p>
+                    <p><i class="fas fa-phone-alt"></i> (01) 581-2261</p>
+                    <p><i class="fas fa-envelope"></i> informes@vallegrande.edu.pe</p>
+                    <p><i class="fas fa-globe"></i> www.vallegrande.edu.pe</p>
+                </div>
+         </div>
         <p>&copy; 2023 Valle Grande. Todos los derechos reservados.</p>
+
     </footer>
 
     <script src="script.js"></script>
