@@ -98,9 +98,22 @@ header h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);    
 }
-.history a{
+.leer-mas{
+    display: inline-block;
+    margin: 40px 0;
+    position: flex; /* Permite posicionamiento absoluto interno */
+    right: 300px;
     
+    /* Estilo del cuadro */
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: rgba(241, 162, 13, 0.863);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
+
 
 /* Misión y Visión */
 .mission-vision {
