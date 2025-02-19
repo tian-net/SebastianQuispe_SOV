@@ -1,103 +1,210 @@
 /* Estilos generales */
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    margin: auto;
+    line-height: 1.6;
     color: #333;
+    text-align: justify;
 }
 
+/* Header */
 header {
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header .logo {
-    width: 120px;
+.header-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
     height: auto;
+    margin-right: 20px;
 }
 
 header h1 {
-    margin: 10px 0;
-    font-size: 2.5em;
+    color: #2c3e50;
+    font-size: 3em;
+    margin: 0;
 }
 
+/* Navegación */
+.header-nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-box {
+    background: #f09218;
+    border: 2px solid #030303;
+    color: rgb(0, 0, 0);
+    padding: 15px 45px;
+    border-radius: 45px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-box:hover {
+    background: #0056b3;
+}
+
+/* Banner */
 .banner {
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
     margin-top: 20px;
 }
 
-/* Estilos para los rectángulos de navegación */
-.navigation-boxes {
+/* Sección Quiénes Somos */
+.about-us .content-wrapper {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    gap: 30px;
+    align-items: center;   
+}
+.about-us h2{
+    color: rgb(219, 32, 32);
+    margin-left: 70px;
+}
+.content-wrapper{
+    margin-left: 70px;
+    text-align: justify;
+    margin-right: 1000px;
+}
+/* Sección Desarrollo Historico */
+
+.history h2{
+    color: #0609f0;
+    margin-left: 70px;
+}
+.content-history{
+    margin-left: 70px;
+    text-align: justify;
+    margin-right: 1000px;
 }
 
-.box {
-    text-decoration: none;
-    color: white;
-    background-color: #e2bb0a;
-    padding: 10px;
-    border-radius: 60px;
-    text-align: center;
-    width: 7%;
-    transition: background-color 0.3s ease;
+.history-image {
+    position: relative;
+    top: -130px;
+    left: 1400px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);    
 }
-
-.box:hover {
-    background-color: #45a049;
-}
-
-.box-content h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-/* Estilos para las secciones */
-section {
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #4CAF50;
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-.about-image {
-    width: 150px;
-    height: auto;
-    margin-top: 15px;
-}
-
-.read-more {
+.leer-mas{
     display: inline-block;
-    margin-top: 10px;
-    color: #4CAF50;
-    text-decoration: none;
+    margin: -170px;
+    position: flex; 
+    right: 300px;
+    
+    
+    /* Estilo del cuadro */
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: rgba(241, 162, 13, 0.863);
+}
+
+
+
+/* Misión y Visión */
+.mission-vision {
+    
+    padding: 85px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.misionyvision h2{
+    color: rgb(250, 12, 12);
+}
+
+.mision h3{
+    color:#ac660c;
+}
+
+.mision p{
+    margin-right: 1000px;
+}
+
+.vision h3{
+    color:#ac660c;
+}
+
+.vision p{
+    margin-right: 1000px;
+}
+
+/* Organigrama */
+.organigrama {
+    margin-left: 80px;
     font-weight: bold;
 }
 
-.read-more:hover {
-    text-decoration: underline;
+/* Youtube */
+.youtube h2{
+    color: #0609f0;
+    margin-left: 750px;
+}
+.youtube-img{
+    object-fit: contain;
+    margin-left: 620px;
 }
 
-.youtube-embed {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+    background: #133a61;
     color: white;
-    margin-top: 40px;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.contact-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-column h3 {
+    color: #fcfcfc;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.contact-column p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-globe {
+    color: #eea317;
+    font-size: 1.1em;
+}
+
+footer > p {
+    text-align: center;
+    padding-top: 25px;
+    margin: 0;
 }

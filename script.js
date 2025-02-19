@@ -1,14 +1,24 @@
-// JavaScript para interactividad (opcional)
-document.addEventListener("DOMContentLoaded", function () {
-    // Ejemplo de interacción: Cambiar el color del título al hacer clic
-    const headerTitle = document.querySelector("header h1");
-    headerTitle.addEventListener("click", function () {
-        headerTitle.style.color = "#FFD700"; // Cambia el color a dorado
+// Smooth scrolling para enlaces internos
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
+});
 
-    // Ejemplo de interacción: Mostrar un mensaje al pasar el mouse sobre el logo
-    const logo = document.querySelector(".logo");
-    logo.addEventListener("mouseover", function () {
-        alert("¡Bienvenido a Valle Grande!");
-    });
+// Carga dinámica del video de YouTube
+document.addEventListener('DOMContentLoaded', function() {
+    const youtubeEmbed = document.querySelector('.youtube-embed');
+    youtubeEmbed.innerHTML = `
+        <iframe 
+            width="100%" 
+            height="400" 
+            src="https://www.youtube.com/embed/?listType=user_uploads&list=UCAy8Qkj1AQuqnKiogNdshBA" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    `;
 });
