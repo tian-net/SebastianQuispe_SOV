@@ -4,6 +4,7 @@ body {
     margin: auto;
     line-height: 1.6;
     color: #333;
+    text-align: justify;
 }
 
 /* Header */
@@ -100,17 +101,16 @@ header h1 {
 }
 .leer-mas{
     display: inline-block;
-    margin: 40px 0;
-    position: flex; /* Permite posicionamiento absoluto interno */
+    margin: -170px;
+    position: flex; 
     right: 300px;
+    
     
     /* Estilo del cuadro */
     border: 2px solid #000000;
     border-radius: 30px;
     padding: 15px 30px;
     background-color: rgba(241, 162, 13, 0.863);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
 
 
@@ -118,24 +118,48 @@ header h1 {
 /* Misión y Visión */
 .mission-vision {
     
-    padding: 5px;
+    padding: 85px;
     margin: 5px 0;
     border-radius: 8px;
 }
 
+.misionyvision h2{
+    color: rgb(250, 12, 12);
+}
 
+.mision h3{
+    color:#ac660c;
+}
+
+.mision p{
+    margin-right: 1000px;
+}
+
+.vision h3{
+    color:#ac660c;
+}
+
+.vision p{
+    margin-right: 1000px;
+}
 
 /* Organigrama */
-.organigrama-link img {
-    width: 100%;
-    max-width: 800px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    margin: 20px 0;
+.organigrama {
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+/* Youtube */
+.youtube h2{
+    color: #0609f0;
+    margin-left: 750px;
+}
+.youtube-img{
+    object-fit: contain;
+    margin-left: 620px;
 }
 
 /* Footer */
-/* Agrega estos estilos al CSS */
 footer {
     background: #133a61;
     color: white;
@@ -183,11 +207,4 @@ footer > p {
     text-align: center;
     padding-top: 25px;
     margin: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-contact {
-        flex-direction: column;
-    }
 }
